@@ -9,8 +9,9 @@ TASK_COLLECTION = "System_tasks"
 TASK_INPROGRESS_COLLECTION = "System_tasks_Inprogress"
 INCIDENT_COLLECTION = "Incident"
 SEQUENCE_COLLECTION = "collection_sequence"
-TASK_ID_SEQUENCE_KEY = "incident_task_id"
+TASK_ID_SEQUENCE_KEY = "incident_arrears_mismatch_task_id"
 TEMPLATE_TASK_ID = 112
+TASK_TYPE = "Create Task for Arrears Mismatch Case List"
 
 
 def _to_decimal(value):
@@ -121,6 +122,7 @@ def _build_task_document(next_task_id, incident_id):
 	return {
 		"Task_Id": next_task_id,
 		"Template_Task_Id": TEMPLATE_TASK_ID,
+		"Task_Type": TASK_TYPE,
 		"Incident_Id": incident_id,
 	}
 
