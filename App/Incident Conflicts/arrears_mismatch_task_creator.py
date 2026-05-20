@@ -10,7 +10,7 @@ TASK_INPROGRESS_COLLECTION = "System_tasks_Inprogress"
 INCIDENT_COLLECTION = "Incident"
 SEQUENCE_COLLECTION = "collection_sequence"
 TASK_ID_SEQUENCE_KEY = "incident_arrears_mismatch_task_id"
-TEMPLATE_TASK_ID = 112
+TEMPLATE_TASK_ID = 200
 TASK_TYPE = "Create Task for Arrears Mismatch Case List"
 
 
